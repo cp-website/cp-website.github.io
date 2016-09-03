@@ -46,12 +46,6 @@
   <!--Google Analytics - PHP tracking-->
 	<?php include_once("analyticstracking.php") ?>
 	<!--End of Google Analytics - PHP tracking-->
-  <li class="navsearch">
-    <form action="http://google.com/search" method="get" onsubmit="location.href = this.action + '?&amp;q=%2Bsite:cellprofiler.org+' + this.query.value; return false;">
-      <input maxlength="255" name="query" size="20" type="text" value="">
-      <input type="submit" value="search">
-    </form>
-  </li>
     <div class="top bar"></div>
     <div class="documentation-container">
         <div class="row">
@@ -80,6 +74,12 @@
             <div class="column-3 hidden-mobile empty-container"></div>
             <div class="column-7 mobile-column-3 details-container">
                 <section>
+                  <li class="navsearch">
+                    <form action="http://google.com/search" method="get" onsubmit="location.href = this.action + '?&amp;q=%2Bsite:cellprofiler.org+' + this.query.value; return false;">
+                      <input maxlength="255" name="query" size="20" type="text" value="">
+                      <input type="submit" value="search">
+                    </form>
+                  </li>
                     <div class="row">
                         <div class="column-12"><a name="Tutorials" href="#tutorials"><h2>Tutorials</h2><p>Documents are in PDF and PPS (self-starting
 Powerpoint slide) format.</p><p>Technical descriptions of CellProfiler and CellProfiler Analyst software
