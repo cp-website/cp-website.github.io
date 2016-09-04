@@ -46,12 +46,6 @@
   <!--Google Analytics - PHP tracking-->
 	<?php include_once("analyticstracking.php") ?>
 	<!--End of Google Analytics - PHP tracking-->
-  <li class="navsearch">
-    <form action="http://google.com/search" method="get" onsubmit="location.href = this.action + '?&amp;q=%2Bsite:cellprofiler.org+' + this.query.value; return false;">
-      <input maxlength="255" name="query" size="20" type="text" value="">
-      <input type="submit" value="search">
-    </form>
-  </li>
     <div class="top bar"></div>
     <div class="documentation-container">
         <div class="row">
@@ -78,18 +72,18 @@
                 </section>
             </div>
             <div class="column-3 hidden-mobile empty-container"></div>
-            <div class="column-7 mobile-column-3 details-container">
-              <section>
-                <li class="navsearch">
-                  <form action="http://google.com/search" method="get" onsubmit="location.href = this.action + '?&amp;q=%2Bsite:cellprofiler.org+' + this.query.value; return false;">
-                    <input maxlength="255" name="query" size="20" type="text" value="">
-                    <input type="submit" value="search">
-                  </form>
-                </li>
-                <hr>
-                <section>
-                    <div class="row">
-                        <div class="column-12"><a name="Impact" href="#impact"><h2>Impact on Human Health</h2></a>
+      			<div class="column-7 mobile-column-3 details-container">
+      				<section>
+      					<div class="row">
+      						<div class="column-12">
+      							<li class="navsearch">
+      								<form action="http://google.com/search" method="get" onsubmit="location.href = this.action + '?&amp;q=%2Bsite:cellprofiler.org+' + this.query.value; return false;">
+      									<input maxlength="255" name="query" size="20" type="text" value="">
+      									<input type="submit" value="search">
+      								</form>
+      							</li>
+      							<hr>
+                        <a name="Impact" href="#impact"><h2>Impact on Human Health</h2></a>
                             <p> Our CellProfiler software has yielded discoveries in several translational projects, some of which may ultimately have a direct impact on the treatment of disease. For example, CellProfiler has been used to identify several
                                 small molecules that are effective in treating particular diseases in mouse models. In some cases, discoveries made using CellProfiler have even led to planning clinical trials in humans, which could directly improve patient
                                 outcomes. Here we highlight instances that have come to our attention. See also:&nbsp<a href="/citations">citations</a></p>
